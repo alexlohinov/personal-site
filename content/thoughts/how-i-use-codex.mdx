@@ -1,0 +1,15 @@
+---
+title: How I Use Codex
+description: A short note on using AI coding agents as a practical product engineering tool.
+date: 2026-07-09
+---
+
+Codex works best for me when the task is concrete, the constraints are explicit, and the output can be verified quickly.
+
+I use it like a careful pair programmer: first to inspect the system, then to make small changes, then to run the checks that prove whether the change actually worked. The value is not in asking it to guess the whole product. The value is in tightening the loop between intent, implementation, and verification.
+
+The prompts that help most are specific about what should not change. I describe the shape of the solution, the files that matter, the behavior I expect, and the tradeoffs I want to avoid. That usually produces simpler code than asking for a broad implementation and fixing it afterward.
+
+The same rule applies to reviews. I want the agent to look for regressions, missing tests, unclear ownership, and unnecessary complexity. When it finds something, the best output is direct: what is wrong, where it is, and what should happen next.
+
+Used this way, Codex is less of a generator and more of an execution layer for well-scoped engineering work.
