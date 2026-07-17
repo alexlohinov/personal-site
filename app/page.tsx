@@ -1,6 +1,7 @@
 import Image from "next/image";
 import NextLink from "next/link";
 import { Polaroids } from "@/components/polaroids";
+import { SelectedWork } from "@/components/selected-work";
 import { ThemeToggle } from "@/components/theme-toggle";
 
 export default function Home() {
@@ -130,6 +131,8 @@ export default function Home() {
           <time dateTime="2026-07-09" className="text-[#7d7d7d] dark:text-[#888888]">Jul 9</time>
         </NextLink>
       </section>
+
+      <SelectedWork />
 
       <Polaroids />
     </main>
